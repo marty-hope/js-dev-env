@@ -10,7 +10,7 @@ describe('Our first test', () => {
 
 describe('index.html', () => {
   //include done when doing an asynchronous test
-  it('should say hello', (done) => {
+  it('should say "Hello World!"', (done) => {
     const index = fs.readFileSync('./src/index.html', 'UTF-8');
     //jsdom uses callback so requires
     jsdom.env(index, (err, window) => {
