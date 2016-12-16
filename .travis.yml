@@ -1,7 +1,9 @@
 language: node_js
 node_js:
  - "6"
- notifications:
+notifications:
   email:
     recipients:
-      - marty.hope@gmail.com
+    - marty.hope@gmail.com
+  on_success: change
+  on_failure: always
