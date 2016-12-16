@@ -10,7 +10,8 @@
     "lint" : "esw webpackconfig.* src buildScripts --color",
     "security-check": "nsp check",
     "share": "npm-run-all --parallel open:src localtunnel",
-    "localtunnel": "lt --port 3000 --subdomain marty"
+    "localtunnel": "lt --port 3000 --subdomain marty",
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
   },
   "author": "Cory House",
   "license": "MIT",
