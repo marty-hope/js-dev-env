@@ -4,8 +4,10 @@
   "description": "JavaScript development environment recommended by Cory House",
   "scripts": {
     "prestart": "babel-node BuildScripts/startMessage.js",
-    "start": "npm-run-all --parallel security-check open:src",
+    "start": "npm-run-all --parallel security-check open:src lint:watch",
     "open:src": "babel-node buildScripts/srcServer.js",
+    "lint:watch": "npm run lint -- --watch",
+    "lint" : "esw webpackconfig.* src buildScripts --color",
     "security-check": "nsp check",
     "share": "npm-run-all --parallel open:src localtunnel",
     "localtunnel": "lt --port 3000 --subdomain marty"
