@@ -10,12 +10,12 @@ describe('Our first test', () => {
 
 describe('index.html', () => {
   //include done when doing an asynchronous test
-  it('should say "Hello World!"', (done) => {
+  it('should say "Users"', (done) => {
     const index = fs.readFileSync('./src/index.html', 'UTF-8');
     //jsdom uses callback so requires
     jsdom.env(index, (err, window) => {
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal("Hello World!");
+      expect(h1.innerHTML).to.equal("Users");
       done();
       window.close();
     });

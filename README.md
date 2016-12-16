@@ -9,3 +9,4 @@ eslint linter
 mocha test framework
 chai assertion library
 JSDOM test environment
+fetch (polyfill) http library
