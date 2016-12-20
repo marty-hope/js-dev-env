@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+#location of mock data
+src/api/db.json
+
 # Runtime data
 pids
 *.pid
