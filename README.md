@@ -10,3 +10,5 @@ mocha test framework
 chai assertion library
 JSDOM test environment
 fetch (polyfill) http library
+JSON Server - delivers mock http api
+JSON Shema Faker - generates random mock data for JSON Server
