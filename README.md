@@ -1,14 +1,14 @@
 # js-dev-env
 Baseline JavaScript Development Environment
-
-npm scripts
-babel transpiler
-ES6 modules
-webpack bundler
-eslint linter
-mocha test framework
-chai assertion library
-JSDOM test environment
-fetch (polyfill) http library
-JSON Server - delivers mock http api
-JSON Shema Faker - generates random mock data for JSON Server
+***
+1. npm scripts
+2. babel transpiler
+3. ES6 modules
+4. webpack bundler
+5. eslint linter
+6. mocha test framework
+7. chai assertion library
+8. JSDOM test environment
+10. fetch (polyfill) http library
+11. JSON Server - delivers mock http api
+12. JSON Shema Faker - generates random mock data for JSON Server
